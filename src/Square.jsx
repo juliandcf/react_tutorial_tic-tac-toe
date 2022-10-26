@@ -2,7 +2,7 @@ import React from 'react';
 
 function Square(props) {
     return (
-        <button
+        <button key = {Math.random()}
             className={ (props.winnerSquare) ? "square text-bold" : "square" }
             onClick={props.onClick}
         >
